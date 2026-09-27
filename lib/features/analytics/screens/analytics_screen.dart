@@ -58,6 +58,7 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
     final db = await DatabaseHelper.instance.database;
     final rows = await db.query('conventions', orderBy: 'start_date DESC');
     final conventions = rows.map(Convention.fromMap).toList();
+    if (!mounted) return;
     setState(() => _conventions = conventions);
     await _loadStats();
   }
@@ -69,8 +70,9 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
       final convFilter = _selected?.id?.toString();
 
       final where = convFilter != null
-          ? "WHERE cc.isPaid = 1 AND cc.conventionId = '$convFilter'"
+          ? 'WHERE cc.isPaid = 1 AND cc.conventionId = ?'
           : 'WHERE cc.isPaid = 1';
+      final whereArgs = convFilter != null ? [convFilter] : <Object>[];
 
       // Stats globales
       final statsResult = await db.rawQuery('''
@@ -84,7 +86,7 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
           COUNT(CASE WHEN cc.paymentMethod = 'card' THEN 1 END)          AS card_count
         FROM client_carts cc
         $where
-      ''');
+      ''', whereArgs);
 
       final r = statsResult.first;
       final stats = _ConventionStats(
@@ -98,9 +100,7 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
       );
 
       // Top articles
-      final topWhere = convFilter != null
-          ? "WHERE cc.isPaid = 1 AND cc.conventionId = '$convFilter'"
-          : 'WHERE cc.isPaid = 1';
+      final topWhere = where;
 
       final topResult = await db.rawQuery('''
         SELECT i.name,
@@ -113,7 +113,7 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
         GROUP BY ci.itemId, i.name
         ORDER BY total_qty DESC
         LIMIT 10
-      ''');
+      ''', whereArgs);
 
       final topItems = topResult
           .map((row) => _TopItem(
@@ -123,14 +123,15 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
               ))
           .toList();
 
+      if (!mounted) return;
       setState(() {
         _stats    = stats;
         _topItems = topItems;
         _loading  = false;
       });
     } catch (e) {
-      setState(() => _loading = false);
       if (mounted) {
+        setState(() => _loading = false);
         ScaffoldMessenger.of(context)
             .showSnackBar(SnackBar(content: Text('Erreur analytics: $e')));
       }
