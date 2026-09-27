@@ -1,0 +1,236 @@
+{
+  "@@locale": "en",
+
+  "appTitle": "Convention App",
+  "@appTitle": { "description": "App title" },
+
+  "modeRefill": "Stock",
+  "@modeRefill": { "description": "Refill / stock management mode tab label" },
+
+  "modeConvention": "Conventions",
+  "@modeConvention": { "description": "Convention mode tab label" },
+
+  "modeSettings": "Settings",
+  "@modeSettings": { "description": "Settings tab label" },
+
+  "itemsTitle": "Items",
+  "@itemsTitle": {},
+
+  "addItem": "Add item",
+  "@addItem": {},
+
+  "editItem": "Edit item",
+  "@editItem": {},
+
+  "deleteItem": "Delete item",
+  "@deleteItem": {},
+
+  "deleteItemConfirm": "Delete \"{name}\"?",
+  "@deleteItemConfirm": {
+    "placeholders": { "name": { "type": "String" } }
+  },
+
+  "itemName": "Name",
+  "@itemName": {},
+
+  "itemDescription": "Description",
+  "@itemDescription": {},
+
+  "itemPrice": "Unit price",
+  "@itemPrice": {},
+
+  "itemStock": "Stock quantity",
+  "@itemStock": {},
+
+  "itemImage": "Image",
+  "@itemImage": {},
+
+  "pickFromGallery": "Gallery",
+  "@pickFromGallery": {},
+
+  "pickFromCamera": "Camera",
+  "@pickFromCamera": {},
+
+  "removeImage": "Remove image",
+  "@removeImage": {},
+
+  "save": "Save",
+  "@save": {},
+
+  "cancel": "Cancel",
+  "@cancel": {},
+
+  "delete": "Delete",
+  "@delete": {},
+
+  "confirm": "Confirm",
+  "@confirm": {},
+
+  "conventionsTitle": "Conventions",
+  "@conventionsTitle": {},
+
+  "addConvention": "New convention",
+  "@addConvention": {},
+
+  "editConvention": "Edit convention",
+  "@editConvention": {},
+
+  "deleteConvention": "Delete convention",
+  "@deleteConvention": {},
+
+  "conventionName": "Convention name",
+  "@conventionName": {},
+
+  "conventionStartDate": "Start date",
+  "@conventionStartDate": {},
+
+  "conventionEndDate": "End date (optional)",
+  "@conventionEndDate": {},
+
+  "conventionClosed": "Closed",
+  "@conventionClosed": {},
+
+  "conventionOpen": "Open",
+  "@conventionOpen": {},
+
+  "closeConvention": "Close convention",
+  "@closeConvention": {},
+
+  "reopenConvention": "Reopen convention",
+  "@reopenConvention": {},
+
+  "conventionDetail": "Convention detail",
+  "@conventionDetail": {},
+
+  "addEntry": "Add item to sale",
+  "@addEntry": {},
+
+  "quantity": "Qty",
+  "@quantity": {},
+
+  "total": "Total",
+  "@total": {},
+
+  "subtotal": "Subtotal",
+  "@subtotal": {},
+
+  "receipt": "Receipt",
+  "@receipt": {},
+
+  "shareReceipt": "Share receipt",
+  "@shareReceipt": {},
+
+  "noItems": "No items yet. Add some in Stock mode.",
+  "@noItems": {},
+
+  "noConventions": "No conventions yet.",
+  "@noConventions": {},
+
+  "noEntries": "No items added yet.",
+  "@noEntries": {},
+
+  "fieldRequired": "This field is required",
+  "@fieldRequired": {},
+
+  "invalidNumber": "Enter a valid number",
+  "@invalidNumber": {},
+
+  "invalidPrice": "Enter a valid price (e.g. 5.00)",
+  "@invalidPrice": {},
+
+  "settingsTitle": "Settings",
+  "@settingsTitle": {},
+
+  "language": "Language",
+  "@language": {},
+
+  "exportData": "Export data",
+  "@exportData": {},
+
+  "exportDataDesc": "Export all items and conventions as JSON (for backup / device transfer)",
+  "@exportDataDesc": {},
+
+  "importData": "Import data",
+  "@importData": {},
+
+  "importDataDesc": "Restore from a previously exported JSON file",
+  "@importDataDesc": {},
+
+  "exportSuccess": "Data exported successfully",
+  "@exportSuccess": {},
+
+  "importSuccess": "Data imported successfully",
+  "@importSuccess": {},
+
+  "importError": "Import failed: {error}",
+  "@importError": {
+    "placeholders": { "error": { "type": "String" } }
+  },
+
+  "importConfirm": "This will replace all current data. Continue?",
+  "@importConfirm": {},
+
+  "errorGeneric": "An error occurred. Please try again.",
+  "@errorGeneric": {},
+
+  "stockLabel": "Stock: {qty}",
+  "@stockLabel": {
+    "placeholders": { "qty": { "type": "int" } }
+  },
+
+  "priceLabel": "{price}",
+  "@priceLabel": {
+    "placeholders": { "price": { "type": "String" } }
+  },
+
+  "analyticsStatistics": "Analytics & Statistics",
+  "@analyticsStatistics": {},
+
+  "totalRevenue": "Total Revenue",
+  "@totalRevenue": {},
+
+  "averageCart": "Average Cart Value",
+  "@averageCart": {},
+
+  "totalTransactions": "Total Transactions",
+  "@totalTransactions": {},
+
+  "topItems": "Top Selling Items",
+  "@topItems": {},
+
+  "conventionStats": "Convention Statistics",
+  "@conventionStats": {},
+
+  "noData": "No data available",
+  "@noData": {},
+
+  "revenue": "Revenue",
+  "@revenue": {},
+
+  "name": "Name",
+  "@name": {},
+
+  "paymentMethod": "Payment method",
+  "@paymentMethod": {},
+
+  "payCash": "Cash",
+  "@payCash": {},
+
+  "payCard": "Bank card",
+  "@payCard": {},
+
+  "allConventions": "All conventions",
+  "@allConventions": {},
+
+  "clients": "Clients",
+  "@clients": {},
+
+  "cashRevenue": "Cash",
+  "@cashRevenue": {},
+
+  "cardRevenue": "Card",
+  "@cardRevenue": {},
+
+  "paymentBreakdown": "Payment breakdown",
+  "@paymentBreakdown": {}
+}

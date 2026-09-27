@@ -1,0 +1,94 @@
+{
+  "@@locale": "fr",
+
+  "appTitle": "Convention App",
+  "modeRefill": "Stock",
+  "modeConvention": "Conventions",
+  "modeSettings": "Paramètres",
+
+  "itemsTitle": "Articles",
+  "addItem": "Ajouter un article",
+  "editItem": "Modifier l'article",
+  "deleteItem": "Supprimer l'article",
+  "deleteItemConfirm": "Supprimer \"{name}\" ?",
+
+  "itemName": "Nom",
+  "itemDescription": "Description",
+  "itemPrice": "Prix unitaire",
+  "itemStock": "Quantité en stock",
+  "itemImage": "Image",
+
+  "pickFromGallery": "Galerie",
+  "pickFromCamera": "Appareil photo",
+  "removeImage": "Supprimer l'image",
+
+  "save": "Enregistrer",
+  "cancel": "Annuler",
+  "delete": "Supprimer",
+  "confirm": "Confirmer",
+
+  "conventionsTitle": "Conventions",
+  "addConvention": "Nouvelle convention",
+  "editConvention": "Modifier la convention",
+  "deleteConvention": "Supprimer la convention",
+  "conventionName": "Nom de la convention",
+  "conventionStartDate": "Date de début",
+  "conventionEndDate": "Date de fin (optionnelle)",
+  "conventionClosed": "Fermée",
+  "conventionOpen": "Ouverte",
+  "closeConvention": "Fermer la convention",
+  "reopenConvention": "Rouvrir la convention",
+  "conventionDetail": "Détail de la convention",
+
+  "addEntry": "Ajouter un article à la vente",
+  "quantity": "Qté",
+  "total": "Total",
+  "subtotal": "Sous-total",
+  "receipt": "Reçu",
+  "shareReceipt": "Partager le reçu",
+
+  "noItems": "Aucun article. Ajoutez-en dans l'onglet Stock.",
+  "noConventions": "Aucune convention.",
+  "noEntries": "Aucun article ajouté.",
+
+  "fieldRequired": "Ce champ est obligatoire",
+  "invalidNumber": "Entrez un nombre valide",
+  "invalidPrice": "Entrez un prix valide (ex: 5.00)",
+
+  "settingsTitle": "Paramètres",
+  "language": "Langue",
+
+  "exportData": "Exporter les données",
+  "exportDataDesc": "Exporter tous les articles et conventions en JSON (sauvegarde / changement d'appareil)",
+  "importData": "Importer les données",
+  "importDataDesc": "Restaurer depuis un fichier JSON exporté précédemment",
+  "exportSuccess": "Données exportées avec succès",
+  "importSuccess": "Données importées avec succès",
+  "importError": "Échec de l'import : {error}",
+  "importConfirm": "Cela remplacera toutes les données actuelles. Continuer ?",
+
+  "errorGeneric": "Une erreur est survenue. Veuillez réessayer.",
+
+  "stockLabel": "Stock : {qty}",
+  "priceLabel": "{price}",
+
+  "analyticsStatistics": "Analytiques et statistiques",
+  "totalRevenue": "Chiffre d'affaires total",
+  "averageCart": "Panier moyen",
+  "totalTransactions": "Nombre de transactions",
+  "topItems": "Articles les plus vendus",
+  "conventionStats": "Statistiques par convention",
+  "noData": "Aucune donnée disponible",
+  "revenue": "Chiffre d'affaires",
+  "name": "Nom",
+
+  "paymentMethod": "Mode de paiement",
+  "payCash": "Espèces",
+  "payCard": "Carte bancaire",
+
+  "allConventions": "Toutes les conventions",
+  "clients": "Clients",
+  "cashRevenue": "Espèces",
+  "cardRevenue": "Carte",
+  "paymentBreakdown": "Répartition des paiements"
+}
